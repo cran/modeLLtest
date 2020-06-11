@@ -1,4 +1,5 @@
-# modeLLtest [![Build Status](https://travis-ci.com/ShanaScogin/modeLLtest.svg?branch=master)](https://travis-ci.com/ShanaScogin/modeLLtest)
+# modeLLtest [![Build Status](https://travis-ci.com/ShanaScogin/modeLLtest.svg?branch=master)](https://travis-ci.com/ShanaScogin/modeLLtest) [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/modeLLtest)](https://CRAN.R-project.org/package=modeLLtest) [![DOI](https://joss.theoj.org/papers/10.21105/joss.01542/status.svg)](https://doi.org/10.21105/joss.01542)
+
 An R Package which implements model comparison tests using cross-validated log-likelihood (CVLL) values. 
 
 # Introduction
@@ -11,7 +12,13 @@ An R Package which implements model comparison tests using cross-validated log-l
 * Desmarais, B. A., & Harden, J. J. (2014). An unbiased model comparison test using cross-validation. Quality & Quantity, 48(4), 2155-2173. <https://doi.org/10.1007/s11135-013-9884-7>
 
 # Installing The Package
-Currently the package can be downloaded with the devtools package in R from GitHub. To do this, install devtools by calling:
+The easiest way to install `modeLLtest` is to use `install.packages()` and download it from CRAN.
+
+```
+install.packages("modeLLtest")
+```
+
+Installing from CRAN should avoid any compilation issues that can arise and is the quickest option. However, the newest version of the package can also be downloaded with the `devtools` package in R from GitHub. To do this, install devtools by calling:
 
 ```
 install.packages("devtools")
@@ -23,7 +30,7 @@ Now we can install from GitHub with the following line:
 devtools::install_github("ShanaScogin/modeLLtest")
 ```
 
-Once you have installed the package, you can access it by calling:
+Once you have installed the package from either CRAN or GitHub, you can access it by calling:
 
 ```
 library(modeLLtest)
@@ -79,7 +86,7 @@ obj_cvlldiff <- cvlldiff(obj_cvll_ols$cvll, obj_cvll_mr$cvll,
 obj_cvlldiff
 ```
 
-Finally, let's look at the `cvmf()` function. This function compares the partial likelihood maximization (PLM) and the iteratively reweighted robust (IRR) methods of estimation for a given application of the Cox model.
+Finally, let's look at the `cvmf()` function. This function compares the partial likelihood maximization (PLM) and the iteratively reweighted robust (IRR) methods of estimation for a given application of the Cox model. Note: This function currently runs slowly (approximately 3 seconds for one run). Future developments look to optimize this function.  
 
 ```
 library(modeLLtest)
@@ -173,4 +180,4 @@ govtform_plm
 Next steps for this package include adding more methods to the `cvdm()` and `cvll()` functions and optimizing functions - especially `cvmf()` - to improve speed.
 
 # Contact
-Please contact sscogin@nd.edu if you encounter any bugs or have questions or comments. 
+Please submit an [issue](https://github.com/ShanaScogin/modeLLtest/issues) if you encounter any bugs or problems with the package.

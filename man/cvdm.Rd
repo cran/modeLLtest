@@ -19,13 +19,14 @@ Ordinary Least Squares ("OLS"), Median Regression ("MR"), Robust Linear
 Regression ("RLM") using M-estimation, and Robust Linear Regression using
 MM-estimation ("RLM-MM"). The algorithm method used to compute the fit for the
 median regression is the modified version of the Barrodale and Roberts algorithm
-for l1-regression, which is the \code{qr} default by R package quantreg. See quantreg
-\code{qr} function documentation for more details. Fitting for the robust regressions
-is done by iterated re-weighted least squares (IWLS) and is taken from the
-MASS package \code{rlm} function. The MM-estimation is the M-estimation with Tukey's
-biweight initialized by a specific S-estimate. The M-estimation, which can be achieved
-in this package with the option "RLM", is the default for the MASS \code{rlm} function.
-See MASS package \code{rlm} documentation for details.}
+for l1-regression, which is the \code{\link[quantreg]{rq}} default by R package quantreg.
+See quantreg \code{\link[quantreg]{rq}} function documentation for more details.
+Fitting for the robust regressions is done by iterated re-weighted least squares
+(IWLS) and is taken from the MASS package \code{\link[MASS]{rlm}} function.
+The MM-estimation is the M-estimation with Tukey's biweight initialized by a specific
+S-estimate. The M-estimation, which can be achieved in this package with the
+option "RLM", is the default for the MASS \code{\link[MASS]{rlm}}
+function. See MASS package \code{\link[MASS]{rlm}} documentation for details.}
 
 \item{method2}{A method to estimate the model. Options
 are same as for method1.}
@@ -42,7 +43,7 @@ after any subset argument has been used.}
 An object of class \code{cvdm} computed by the cross-validated log likelihood
 difference in means test (CVDM). The object is the Cross-Validated Johnson's t-test.
 A positive test statistic supports the first method and a negative test statistic supports
-the second. See \code{cvdm_object} for more details.
+the second. See \code{\link{cvdm_object}} for more details.
 }
 \description{
 Applies cross-validated log-likelihood difference in means test to
@@ -51,14 +52,20 @@ appropriate model.
 
 In choosing between OLS and MR, please cite:
 
-Harden, J. J., & Desmarais, B. A. (2011). Linear Models with Outliers:
+\itemize{
+\item Harden, J. J., & Desmarais, B. A. (2011). Linear Models with Outliers:
 Choosing between Conditional-Mean and Conditional-Median Methods.
 State Politics & Policy Quarterly, 11(4), 371-389.
+\href{https://doi.org/10.1177/1532440011408929}{https://doi.org/10.1177/1532440011408929}
+}
 
 For other applications of the CVDM test, please cite:
 
-Desmarais, B. A., & Harden, J. J. (2014). An Unbiased Model Comparison Test Using
+\itemize{
+\item Desmarais, B. A., & Harden, J. J. (2014). An Unbiased Model Comparison Test Using
 Cross-Validation. Quality & Quantity, 48(4), 2155-2173.
+\href{https://doi.org/10.1007/s11135-013-9884-7}{https://doi.org/10.1007/s11135-013-9884-7}
+}
 }
 \details{
 This function implements the cross-validated difference in means (CVDM)
@@ -71,6 +78,7 @@ the second. Singular matrices during the leave-one-out cross-validation process
 are skipped.
 }
 \examples{
+\dontshow{.old_wd <- setwd(tempdir())}
 \donttest{
   set.seed(123456)
   b0 <- .2 # True value for the intercept
@@ -81,5 +89,18 @@ are skipped.
   Y <- b0 + b1 * X + rnorm(n, 0, 1) # N(0, 1 error)
 
   obj_cvdm <- cvdm(Y ~ X, data.frame(cbind(Y, X)), method1 = "OLS", method2 = "MR")
+}
+\dontshow{setwd(.old_wd)}
+}
+\references{
+\itemize{
+\item Harden, J. J., & Desmarais, B. A. (2011). Linear Models with Outliers:
+Choosing between Conditional-Mean and Conditional-Median Methods.
+State Politics & Policy Quarterly, 11(4), 371-389.
+\href{https://doi.org/10.1177/1532440011408929}{https://doi.org/10.1177/1532440011408929}
+
+\item Desmarais, B. A., & Harden, J. J. (2014). An Unbiased Model Comparison Test Using
+Cross-Validation. Quality & Quantity, 48(4), 2155-2173.
+\href{https://doi.org/10.1007/s11135-013-9884-7}{https://doi.org/10.1007/s11135-013-9884-7}
 }
 }

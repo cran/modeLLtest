@@ -4,7 +4,7 @@
 \title{Cross-Validated Log-Likelihood (CVLL) Object}
 
 \description{
-This class of objects is returned by \code{cvll} function.
+This class of objects is returned by the \code{\link{cvll}} function.
 }
 
 \value{
@@ -19,12 +19,12 @@ The following components must be included in a legitimate \code{cvll} object.
 
 \item{method}{method of estimation.}
 
-The object also contain the following: \code{call}, \code{x}, and \code{y}. See \code{lm} documentation for more.
+The object also contain the following: \code{call}, \code{x}, and \code{y}. See \code{\link{lm}} documentation for more.
 
 }
 
 \seealso{
-\code{cvll}
+\code{\link{cvll}}
 }
 
 \keyword{cvll}

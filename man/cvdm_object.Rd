@@ -4,7 +4,7 @@
 \title{Cross-Validated Difference in Means (CVDM) Object}
 
 \description{
-This class of objects is returned by \code{cvdm} function to compare two methods of estimating a formula.
+This class of objects is returned by the \code{\link{cvdm}} function to compare two methods of estimating a formula.
 }
 
 \value{
@@ -21,12 +21,12 @@ The following components must be included in a legitimate \code{cvdm} object.
 
 \item{df}{degrees of freedom.}
 
-The object also contain the following: \code{call}, \code{x}, and \code{y}. See \code{lm} documentation for more.
+The object also contain the following: \code{call}, \code{x}, and \code{y}. See \code{\link{lm}} documentation for more.
 
 }
 
 \seealso{
-\code{cvdm}
+\code{\link{cvdm}}
 }
 
 \keyword{cvdm}
