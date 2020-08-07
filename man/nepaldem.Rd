@@ -4,7 +4,8 @@
 \name{nepaldem}
 \alias{nepaldem}
 \title{Data from Joshi and Mason (2008) on voter turnout in Nepal}
-\format{A data frame with 76 rows and 73 variables:
+\format{
+A data frame with 76 rows and 73 variables:
 \describe{
  \item{sn}{a column of identifiers. This column is not a variable}
  \item{district}{names of the district in Nepal used in analysis}
@@ -115,7 +116,8 @@
  \item{hdi_gap}{HDI 1996 (index 0 to 1) gap}
  \item{ln_pop2001}{population in 2001 (logged)}
  \item{hdi_gap1}{HDI 1996 (index 0 to 1) gap (positive values)}
-}}
+}
+}
 \source{
 \href{https://www.prio.org/JPR/Datasets/}{Journal of Peace Research Replication Datasets}
 }
@@ -133,11 +135,12 @@ and has been included here with the endorsement of the authors.
 \examples{
 \dontshow{.old_wd <- setwd(tempdir())}
 \donttest{
+data(nepaldem)
+
 library(MASS)
 library(modeLLtest)
 
 # Models from Joshi and Mason (2008)
-data(nepaldem)
 model_1991 <- rlm(percent_regvote1991 ~ landless_gap +
    below1pa_gap + sharecrop_gap + service_gap + fixmoney_gap +
    fixprod_gap + per_without_instcredit + hdi_gap1 + ln_pop2001 +

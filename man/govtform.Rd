@@ -4,7 +4,8 @@
 \name{govtform}
 \alias{govtform}
 \title{Data from Golder (2010) on government formation in Western Europe}
-\format{A data frame with 410 rows and 18 variables. The following are taken
+\format{
+A data frame with 410 rows and 18 variables. The following are taken
 from the codebook at
 \href{https://doi.org/10.7910/DVN/BUWZBA}{Dr. Sona N. Golder's Harvard Dataverse Page}.
 \describe{
@@ -45,7 +46,8 @@ from the codebook at
  variable with the polarization variable}
  \item{post_positive}{interaction term made by multiplying the postelection
  variable with the positive_parl variable}
-}}
+}
+}
 \source{
 \href{https://doi.org/10.7910/DVN/BUWZBA}{Dr. Sona N. Golder's Harvard Dataverse Page}
 }
@@ -63,12 +65,14 @@ variables.
 \examples{
 \dontshow{.old_wd <- setwd(tempdir())}
 \donttest{
+
+data(govtform)
+
 library(survival)
 library(coxrobust)
 library(modeLLtest)
 
 # Survival models with data from Golder (2010)
-data(govtform)
 golder_surv <- Surv(govtform$bargainingdays)
 golder_x <- cbind(govtform$postelection, govtform$legislative_parties,
    govtform$polarization, govtform$positive_parl, govtform$post_legislative_parties,
@@ -87,6 +91,7 @@ obj_cvmf_golder <- cvmf(golder_surv ~ golder_x, method = "efron",
    data = govtform)
 
 obj_cvmf_golder
+
 }
 \dontshow{setwd(.old_wd)}
 }
