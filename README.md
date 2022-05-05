@@ -1,4 +1,6 @@
-# modeLLtest [![Build Status](https://travis-ci.com/ShanaScogin/modeLLtest.svg?branch=master)](https://travis-ci.com/ShanaScogin/modeLLtest) [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/modeLLtest)](https://CRAN.R-project.org/package=modeLLtest) [![DOI](https://joss.theoj.org/papers/10.21105/joss.01542/status.svg)](https://doi.org/10.21105/joss.01542)
+# modeLLtest 
+
+[![R-CMD-check](https://github.com/ShanaScogin/modeLLtest/workflows/R-CMD-check/badge.svg)](https://github.com/ShanaScogin/modeLLtest/actions) [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/modeLLtest)](https://CRAN.R-project.org/package=modeLLtest) [![DOI](https://joss.theoj.org/papers/10.21105/joss.01542/status.svg)](https://doi.org/10.21105/joss.01542)
 
 An R Package which implements model comparison tests using cross-validated log-likelihood (CVLL) values. 
 

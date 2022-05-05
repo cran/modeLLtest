@@ -13,7 +13,7 @@
 #'
 #' @format A data frame with 410 rows and 18 variables. The following are taken
 #' from the codebook at
-#' \href{https://doi.org/10.7910/DVN/BUWZBA}{Dr. Sona N. Golder's Harvard Dataverse Page}.
+#' \doi{10.7910/DVN/BUWZBA}.
 #' \describe{
 #'  \item{countryname}{names of countries used in analysis}
 #'  \item{country}{unique number identifying each country}
@@ -30,7 +30,7 @@
 #'  \item{nonpartisan}{dichotomous variable that equals 1 if the government
 #'  is nonpartisan and 0 otherwise}
 #'  \item{legislative_parties}{a fraction representing the number of parties that
-#'  have wone legislative seats. See codebook for more detail}
+#'  have won legislative seats. See codebook for more detail}
 #'  \item{inconclusive}{the number of inconclusive bargaining rounds prior to
 #'  a new government successfully forming}
 #'  \item{cabinetname}{cabinet name identified by surname
@@ -58,9 +58,9 @@
 #'
 #' @references Golder, S. N. (2010). Bargaining delays in the government
 #' formation process. Comparative Political Studies, 43(1), 3-32.
-#' \href{https://doi.org/10.1177/0010414009341714}{https://doi.org/10.1177/0010414009341714}
+#' \doi{10.1177/0010414009341714}
 #'
-#' @source \href{https://doi.org/10.7910/DVN/BUWZBA}{Dr. Sona N. Golder's Harvard Dataverse Page}
+#' @source \doi{10.7910/DVN/BUWZBA}
 #'
 #' @examples
 #' \dontshow{.old_wd <- setwd(tempdir())}

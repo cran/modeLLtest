@@ -21,7 +21,7 @@
 #'For more, see: Desmarais, B. A., & Harden, J. J. (2012). Comparing partial
 #'likelihood and robust estimation methods for the Cox regression model.
 #'Political Analysis, 20(1), 113-135.
-#'\href{https://doi.org/10.1093/pan/mpr042}{https://doi.org/10.1093/pan/mpr042}
+#'\doi{10.1093/pan/mpr042}
 #'@param formula A formula object, with the response on the left of a ~
 #'operator, and the terms on the right. The response must be a survival
 #'object as returned by the \code{\link[survival]{Surv}} function from the survival package.
@@ -42,7 +42,7 @@
 #'for more on \code{\link[survival]{coxph}} method and coxrobust package for
 #'\code{\link[coxrobust]{coxr}} method.
 #'@param trunc A value that determines the trimming level for the robust
-#'estimator. The default is 0.95. Roughtly, quantile of the sample
+#'estimator. The default is 0.95. Roughly, quantile of the sample
 #'\eqn{T_i exp(\beta'Z_i)}. It is an argument in the \code{\link[coxrobust]{coxr}} function
 #'in the coxrobust package.
 #'@param na.action A missing-data filter function, applied to the model.frame,
@@ -66,7 +66,7 @@
 #'Desmarais, B. A., & Harden, J. J. (2012). Comparing partial
 #'likelihood and robust estimation methods for the Cox regression model.
 #'Political Analysis, 20(1), 113-135.
-#'\href{https://doi.org/10.1093/pan/mpr042}{https://doi.org/10.1093/pan/mpr042}
+#'\doi{10.1093/pan/mpr042}
 #' @examples
 #' \dontshow{.old_wd <- setwd(tempdir())}
 #' \donttest{

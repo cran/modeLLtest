@@ -34,16 +34,16 @@ A data frame with 76 rows and 73 variables:
  cash rent}
  \item{no_hold_fixproduct2}{subsection of households with fixed
  product rent}
- \item{no_hold_share2}{subsection of households particpating
+ \item{no_hold_share2}{subsection of households participating
  in sharecropping}
- \item{no_hold_services2}{subsection of households particpating
+ \item{no_hold_services2}{subsection of households participating
  in sharecropping}
  \item{no_hold_mortgage2}{subsection of households with a mortgage}
  \item{no_hold_fixmoney1}{subsection of households with fixed
  cash rent}
  \item{no_hold_fixproduct1}{subsection of households with fixed
  product rent}
- \item{no_hold_share1}{subsection of households particpating
+ \item{no_hold_share1}{subsection of households participating
  in sharecropping}
  \item{no_hold_services1}{subsection of households with rent for
  service}
@@ -73,7 +73,7 @@ A data frame with 76 rows and 73 variables:
  \item{per_without_instcredit}{percent without access to institutional
  credit}
  \item{access_instutional_credit}{access to institutional credit}
- \item{total_hh_sharecrop}{total number of households particpating
+ \item{total_hh_sharecrop}{total number of households participating
  in sharecropping}
  \item{total_hh_fixmoney}{total number of households with fixed
  cash rent}
@@ -86,10 +86,10 @@ A data frame with 76 rows and 73 variables:
  a measure of political violence during the insurgency}
  \item{percent_regvote1991}{election turnout for 1991 as measured
  by the percentage of registered voters who voted in the national
- parlimentary election}
+ parliamentary election}
  \item{percent_regvote1994}{election turnout for 1994 as measured
  by the percentage of registered voters who voted in the national
- parlimentary election}
+ parliamentary election}
  \item{percent_regvote1999}{election turnout for 1999 as measured
  by the percentage of registered voters who voted in the national
  parlimentary election}
@@ -125,7 +125,7 @@ A data frame with 76 rows and 73 variables:
 data(nepaldem)
 }
 \description{
-Data from a study on the relationship bewteen land tenure and
+Data from a study on the relationship between land tenure and
 voter turnout in the three rounds of parliamentary elections
 in Nepal from the restoration of democracy in 1990 to 1999.
 Data is at the district-level (N = 75). Variable names are
@@ -178,6 +178,6 @@ obj_cvdm_jm
 Joshi, M., & Mason, T. D. (2008). Between democracy and
 revolution: peasant support for insurgency versus democracy in Nepal.
 Journal of Peace Research, 45(6), 765-782.
-\href{https://doi.org/10.1177/0022343308096155}{https://doi.org/10.1177/0022343308096155}
+\doi{10.1177/0022343308096155}
 }
 \keyword{datasets}
